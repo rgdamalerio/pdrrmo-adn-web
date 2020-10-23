@@ -1,3 +1,4 @@
-from django.contrib import admin
+from django.contrib.gis import admin
+from .models import Magallenes
 
-# Register your models here.
+admin.site.register(Magallenes, admin.GeoModelAdmin)
